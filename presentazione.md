@@ -2,13 +2,33 @@
 
 ## Problema
 
-\begin{block}{Domanda\dots}
-\Large{Come è possibile \textbf{migliorare} ed \textbf{incentivare} la collaborazione nella produzione di software per la ricerca scientifica?}
-\end{block}
+\large
 
-\begin{exampleblock}{Idea}
-\Large{È possibile guardare al mondo Open Source come ad un modello?}
-\end{exampleblock}
+*	Come è possibile \textbf{migliorare} ed \textbf{incentivare} la collaborazione nella produzione di software per 	la ricerca scientifica?
+
+*	È possibile guardare all' Open Source come modello?
+
+## Incentivi & Open Source
+
+\Large
+
+*	Early Literature
+	-	Idealismo e libertà di espressione
+	-	Use-Value
+	-	"\em{gift economy}"
+*	Recent Literature
+	-	Reputazione
+	-	Possibilità di carriera
+
+## Incentivi & Software Scientifico
+
+\Large
+
+*	Mix di incentivi (reputazione)
+*	**Domain shift**: software $\rightarrow$ scienza
+	-	discrepanze con altri contesti
+	-	comportamenti palesemente controproducenti
+
 
 ## Collaborazione
 
@@ -24,31 +44,11 @@
 
 # Materiali & Metodi
 
-## Materiali & Metodi
-
-\Large{Lo studio ha previsto:}
-
-*	Analisi dell'ecosistema \alert{\textbf{BLAST}}
-*	Interviste semi-strutturate (7 interviste)
-*	Analisi qualitativa
-
-\Large{Quesiti di ricerca:}
-
-1. 	Chi ha creato BLAST, ne cura la manutenzione e i miglioramenti? 
-2. 	Quale codice è stato integrato in BLAST?
-3. 	Cosa ha motivato lo sviluppo, il rilascio e l'integrazione dei miglioramenti?
-
-## Collaborazione & Motivazioni
-
-\begin{center}
-	\includegraphics[width=\linewidth]{img/ciclo_collaborazione2}
-\end{center}
-
-# Risultati
-
 ## Cosa è BLAST (1)
 
-\Large{Il \textbf{\alert{B}asic \alert{L}ocal \alert{A}lignment \alert{S}earch \alert{T}ool:}} 
+\Large
+
+Il \textbf{\alert{B}asic \alert{L}ocal \alert{A}lignment \alert{S}earch \alert{T}ool:} 
 
 *	Creato nel 1990 e descritto in un articolo del _Journal of Molecular Biology_
 *	Concepito come un **algoritmo**
@@ -63,7 +63,7 @@
 *	Comparare fra loro sequenze biologiche primarie (ad es. _aminoacidi_)
 *	Comparare fra loro sequenze di _nucleotidi_ del DNA
 *	Comparare una sequenza in input con quelle provenienti da un database genomico
-*	\ldots
+*	[\ldots]
 
 ## Cosa è BLAST (3)
 
@@ -74,19 +74,79 @@
 	\includegraphics[scale=.12]{img/ncbi_blast}
 \end{center}
 
+## Protocollo dello Studio
+
+\Large{Lo studio ha previsto:}
+
+*	Analisi dell'ecosistema \alert{\textbf{BLAST}}
+	-	Chi lo ha creato
+	-	Chi ne cura manutenzione e sviluppo
+	-	Quale codice è stato integrato
+	-	Quali sono state le motivazioni
+*	Raccolta interviste semi-strutturate
+*	Analisi qualitativa delle interviste
+*	Ispezione della letteratura
+
+\begin{alertblock}{Attenzione\dots}
+Possibili bias dovuti alla ricerca nella letteratura
+\end{alertblock}
+
+## Protocollo delle Interviste
+
+\Large
+
+*	Articolate in tre sezioni
+	-	Background dell'intervistato
+	-	Natura del contributo/miglioramento a BLAST
+	-	Motivazioni per il lavoro
+*	Interviste prevalentemente telefoniche
+*	Interviste registrate
+
+## Materiale Raccolto
+
+\Large
+
+*	7 interviste con 8 intervistati
+*	Rappresentativi delle 7 versioni di BLAST considerate
+*	4 versioni individuate ma senza interviste
+	-	Letteratura
+	-	Siti Web del progetto
+
+## Analisi dei Dati
+
+\Large
+
+*	Sviluppo di transcript ed appunti
+*	Ispezione della letteratura
+*	Discussioni periodiche
+
+
+## Collaborazione & Motivazioni
+
+\begin{center}
+	\includegraphics[width=\linewidth]{img/ciclo_collaborazione2}
+\end{center}
+
+# Risultati
 
 ## Ecosistema BLAST
 
-\Large{BLAST e derivati}
+<!-- \Large{BLAST e derivati} -->
+
+\Large
 
 *	\alert{\textbf{NCBI BLAST}}
 *	\alert{\textbf{BLAST+}}
 *	**WU-BLAST** (ricerca di sequenze con gaps)
 *	**Digital/Compaq BLAST** (ottimizzata per *Alpha*)
 *	**Mac Os X Port**
-*	**A/G BLAST**
+*	**A/G BLAST** (versione ufficiale Apple)
 *	**GPU BLAST** (sfrutta il parallelismo delle GPU Nvidia)
-*	Altri\dots (non inclusi nello studio)
+*	Altri (non inclusi nello studio)
+	-	Miglioramento di versione commerciale
+	-	CUDA-BLAST
+	-	FSA-BLAST
+	-	CS-BLAST
 
 ## Analisi delle motivazioni (1)
 
@@ -135,53 +195,14 @@
 \Large
 
 1.	**Universalità del contributo**
+	-	\doublequoted{\em{Non è conveniente integrare contributi troppo specifici}}
 	-	Non spiega la mancata integrazione di *WU-BLAST* e *GPU BLAST*
 2.	**Costi di integrazione**
+	-	\doublequoted{\em{Il costo d'integrazione è minore in progetti modulari}}
 	-	Sono stati integrati *solo* contributi derivati da NCBI BLAST
 3.	**Intenzioni degli autori**
-	-	La sola spiegazione che si adatta al pattern osservato
-
-<!-- ## Universalità
-
-\begin{block}{Spiegazione}
-
-"I distributori di grossi progetti software potrebbero non volere che il progetto si arricchisca di una funzionalità molto specifica finché tale funzionalità non \alert{acquisisce una certa base d'utenti} (su cui impatta)"
-
-\end{block}
-
-\begin{alertblock}{Tuttavia\dots}
-
-Progetti come \alert{WU-BLAST} e \alert{GPU BLAST} non sono stati integrati
-
-\end{alertblock}
-
-## Costi di Integrazione
-
-\begin{block}{Spiegazione}
-
-"A volte lo \alert{sforzo tecnico} necessario per integrare e manutenere una nuova componente all'interno di un progetto software complesso è troppo esoso"
-
-\end{block}
-
-\begin{alertblock}{Tuttavia\dots}
-
-Solo i progetti basati sulla base di codice originale di BLAST sono stati integrati
-
-\end{alertblock}
-
-## Intezioni degli autori
-
-\begin{block}{Spiegazione}
-
-"I miglioramenti ad un progetto software solitamente vengono integrati a patto che gli autori \alert{lo vogliano}"
-
-\end{block}
-
-\begin{exampleblock}{Quindi\dots}
-
-la spiegazione più semplice e l'unica che si adatta bene al pattern osservato
-
-\end{exampleblock} -->
+	-	\doublequoted{\em{L'integrazione (non)avviene su espressa volontà degli autori}}
+	-	Spiegazione che si adatta al pattern osservato
 
 ## Conflitto di Motivazioni
 
@@ -267,7 +288,7 @@ La collaborazione sarà tanto \alert{efficace} quanto più \alert{equa} sarà la
 
 ## Conclusioni
 
-\Large{L'integrazione dei contributi nel software scientifico:} 
+<!-- \Large{L'integrazione dei contributi nel software scientifico:} 
 
 -	Singoli contributi chiaramente individuabili a livello
 	+	*Software* 
@@ -277,9 +298,11 @@ La collaborazione sarà tanto \alert{efficace} quanto più \alert{equa} sarà la
 	
 # Sviluppi futuri
 
-## Sviluppi futuri
+## Sviluppi futuri -->
 
-\large{Quattro approcci per una possibile soluzione:}
+\Large
+
+Quattro approcci per una possibile soluzione:
 
 1. 	Finanziare la fase di integrazione
 	- 	in maniera _diretta_ 

@@ -1,39 +1,81 @@
-\documentclass[trans,16pt]{beamer}
+\documentclass[trans]{beamer}
 \usepackage{fontspec}
 \usepackage[italian]{babel}
+\usepackage{fancybox}
+
 \usetheme{Madrid}
 \useinnertheme{circles}
+
+%% Color definitions:
 \definecolor{unibablue}{RGB}{6, 64, 113}
-\setbeamercolor{headline}{bg=unibablue,fg=white}
-\setbeamercolor{footline}{bg=unibablue,fg=white}
-\setbeamercolor{itemize items}{fg=unibablue}
+\colorlet{unibaslate}{unibablue!70!black}
+\colorlet{unibalight}{unibablue!20!white}
+
+%% Setting items & blocks properties
 \setbeamertemplate{itemize items}[triangle]
-\setbeamercolor{enumerate items}{fg=unibablue}
 \setbeamertemplate{enumerate items}[circle]
 \setbeamertemplate{blocks}[rounded][shadow=false]
+
+% Setting custom lenght
 \setlength{\lineskip}{1em}
 
+% Setting slides font
 \setsansfont{Calibri}
 
 
-\title[CSCW 2013]{Incentives and Integration In Scientific Software Production}
-\subtitle[Lettura Critica]{Corso di Sistemi per la Collaborazione in Rete}
-\author{Davide Parisi}
-\institute[Uniba]
+%% Change the content of footline
+\makeatletter
+\setbeamertemplate{footline}
 {
-	Corso di Laurea in Informatica Magistrale\\Dipartimento di Informatica
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertsection
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
 }
+\makeatother
 
-\date{A.A.~2012 - 2013}
+%% Setting up Title Page
+\title[CSCW 2013]{Incentives and Integration In Scientific Software Production}
+\author[Howison et al.]{James Howison\inst{1} \and James D Herbsleb\inst{2}}
+\institute[University of Texas and Carnegie Mellon]{
+	\inst{1}University of Texas at Austin \\ Austin, TX
+	\and
+	\inst{2}Carnegie Mellon University \\ Pittsburgh, PA
+}
+\date[CSCW 2013]{Collaboration and Sharing in Scientific Work \\ February 23–27, 2013, San Antonio, TX, USA}
 
+
+%% Custom commands
+% Custom double quote
 \newcommand{\doublequoted}[1]{«#1»}
-% adds reference to bottom right of corner of a slide
-\usepackage[absolute,overlay]{textpos} % text references in slide corners
+% Custom block quotes
+\newcommand{\citazione}[1]{%
+	\begin{beamercolorbox}[sep=1em,rounded=true,center]{fg=unibaslate,bg=unibalight}
+		\em{“#1„}
+	\end{beamercolorbox}
+}%
+% Custom Arrow
+\newcommand{\rightTextArrow}{→}
+% Adds reference to bottom right of corner of a slide
+\usepackage[absolute,overlay]{textpos}
 \newcommand\textref[1]{%
   \begin{textblock*}{\paperwidth}(0pt,0.99\textheight)
   \raggedleft \tiny{\emph{\textbf{#1}}}\hspace{1em}
   \end{textblock*}
-}
+}%
+
+
+%% Setting Template Colors
+\usecolortheme[named=unibablue]{structure}
 
 \begin{document}
 {
@@ -42,6 +84,7 @@
 	\begin{frame}
 		\centering
 		\includegraphics[scale=.1]{img/logo}
+		\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true]
 		\maketitle	
 	\end{frame}
 }
