@@ -21,7 +21,7 @@
 *	Mix di incentivi (reputazione)
 *	**Domain shift**: software $\rightarrow$ scienza
 	-	discrepanze con altri contesti
-	-	comportamenti palesemente controproducenti
+	-	comportamenti controproducenti
 
 
 ## Collaborazione
@@ -127,20 +127,23 @@ Motivazioni per lo \alert{sviluppo}:
 *	Incremento dei profitti/vendita di Hardware
 *	Divertimento
 *	Reputazione accademica
+*	Fornire un servizio alla ricerca scientifica
 
 ## Analisi delle motivazioni (2)
 
 Motivazioni per il \alert{rilascio}:
 
 *	Etica
-*	Accesso alle pubblicazioni
+*	Reputazione accademica/accesso alle pubblicazioni
 *	Incremento dei profitti
+*	Fornire un servizio alla ricerca scientifica
 
 ## Analisi delle motivazioni (3)
 
 Motivazioni per l'\alert{integrazione}:
 
 *	Riduzione dei costi di sviluppo/manutenzione
+*	Incremento dei profitti
 *	\alert{Contro-motivazioni:}
 	-	Perdita della _paternità_ del contributo
 	-	Minaccia al riconoscimento del credito accademico 
@@ -159,9 +162,10 @@ Motivazioni per l'\alert{integrazione}:
 ## Quadro d'insieme
 
 \begin{center}
-	\includegraphics[width=\textwidth]{img/incentives}
+	\includegraphics[width=\textwidth,scale=.3]{img/quadro_insieme}
 \end{center}
 
+\textref{Fonte: Howison \& Herbsleb - "Incentives and Integration In Scientific Software Production", CSCW'13}
 
 ## Possibili Spiegazioni
 
