@@ -2,15 +2,11 @@
 
 ## Problema
 
-\large
-
 *	Come è possibile \textbf{migliorare} ed \textbf{incentivare} la collaborazione nella produzione di software per 	la ricerca scientifica?
 
 *	È possibile guardare all' Open Source come modello?
 
 ## Incentivi & Open Source
-
-\Large
 
 *	Early Literature
 	-	Idealismo e libertà di espressione
@@ -21,8 +17,6 @@
 	-	Possibilità di carriera
 
 ## Incentivi & Software Scientifico
-
-\Large
 
 *	Mix di incentivi (reputazione)
 *	**Domain shift**: software $\rightarrow$ scienza
@@ -39,14 +33,48 @@
 \vspace{.5cm}
 
 \begin{center}
-	\includegraphics[width=\linewidth]{img/ciclo_collaborazione1}
+	\includegraphics[width=\linewidth]{img/ciclo_collaborazione2}
 \end{center}
 
 # Materiali & Metodi
 
-## Cosa è BLAST (1)
+## Protocollo dello Studio
 
-\Large
+Lo studio ha previsto:
+
+*	Analisi dell'ecosistema \alert{\textbf{BLAST}}
+	-	Chi lo ha creato
+	-	Chi ne cura manutenzione e sviluppo
+	-	Quale codice è stato integrato
+	-	Quali sono state le motivazioni
+*	Raccolta interviste semi-strutturate
+*	Analisi qualitativa delle interviste
+*	Ispezione della letteratura
+
+## Protocollo delle Interviste
+
+*	Articolate in tre sezioni
+	-	Background dell'intervistato
+	-	Natura del contributo/miglioramento a BLAST
+	-	Motivazioni per il lavoro
+*	Interviste prevalentemente telefoniche
+*	Interviste registrate
+
+## Materiale Raccolto
+
+*	7 interviste con 8 intervistati
+*	Rappresentativi delle 7 versioni di BLAST considerate
+*	Di ulteriori 4 versioni di BLAST individuate sono state raccolte informazioni attraverso:
+	-	Letteratura
+	-	Siti Web del progetto
+
+## Analisi dei Dati
+
+*	Sviluppo di transcript ed appunti
+*	Ispezione della letteratura
+*	Discussioni periodiche
+
+## Cosa è BLAST (1)
 
 Il \textbf{\alert{B}asic \alert{L}ocal \alert{A}lignment \alert{S}earch \alert{T}ool:} 
 
@@ -58,7 +86,7 @@ Il \textbf{\alert{B}asic \alert{L}ocal \alert{A}lignment \alert{S}earch \alert{T
 
 ## Cosa è BLAST (2)
 
-\Large{Funzionalità di BLAST:}
+Funzionalità di BLAST:
 
 *	Comparare fra loro sequenze biologiche primarie (ad es. _aminoacidi_)
 *	Comparare fra loro sequenze di _nucleotidi_ del DNA
@@ -74,66 +102,9 @@ Il \textbf{\alert{B}asic \alert{L}ocal \alert{A}lignment \alert{S}earch \alert{T
 	\includegraphics[scale=.12]{img/ncbi_blast}
 \end{center}
 
-## Protocollo dello Studio
-
-\Large{Lo studio ha previsto:}
-
-*	Analisi dell'ecosistema \alert{\textbf{BLAST}}
-	-	Chi lo ha creato
-	-	Chi ne cura manutenzione e sviluppo
-	-	Quale codice è stato integrato
-	-	Quali sono state le motivazioni
-*	Raccolta interviste semi-strutturate
-*	Analisi qualitativa delle interviste
-*	Ispezione della letteratura
-
-\begin{alertblock}{Attenzione\dots}
-Possibili bias dovuti alla ricerca nella letteratura
-\end{alertblock}
-
-## Protocollo delle Interviste
-
-\Large
-
-*	Articolate in tre sezioni
-	-	Background dell'intervistato
-	-	Natura del contributo/miglioramento a BLAST
-	-	Motivazioni per il lavoro
-*	Interviste prevalentemente telefoniche
-*	Interviste registrate
-
-## Materiale Raccolto
-
-\Large
-
-*	7 interviste con 8 intervistati
-*	Rappresentativi delle 7 versioni di BLAST considerate
-*	4 versioni individuate ma senza interviste
-	-	Letteratura
-	-	Siti Web del progetto
-
-## Analisi dei Dati
-
-\Large
-
-*	Sviluppo di transcript ed appunti
-*	Ispezione della letteratura
-*	Discussioni periodiche
-
-
-## Collaborazione & Motivazioni
-
-\begin{center}
-	\includegraphics[width=\linewidth]{img/ciclo_collaborazione2}
-\end{center}
-
 # Risultati
 
 ## Ecosistema BLAST
-
-<!-- \Large{BLAST e derivati} -->
-
-\Large
 
 *	\alert{\textbf{NCBI BLAST}}
 *	\alert{\textbf{BLAST+}}
@@ -143,14 +114,14 @@ Possibili bias dovuti alla ricerca nella letteratura
 *	**A/G BLAST** (versione ufficiale Apple)
 *	**GPU BLAST** (sfrutta il parallelismo delle GPU Nvidia)
 *	Altri (non inclusi nello studio)
-	-	Miglioramento di versione commerciale
+	-	Miglioramenti ad una versione commerciale di BLAST
 	-	CUDA-BLAST
 	-	FSA-BLAST
 	-	CS-BLAST
 
 ## Analisi delle motivazioni (1)
 
-\Large{Motivazioni per lo \alert{sviluppo}:}
+Motivazioni per lo \alert{sviluppo}:
 
 *	Use-Value
 *	Incremento dei profitti/vendita di Hardware
@@ -159,7 +130,7 @@ Possibili bias dovuti alla ricerca nella letteratura
 
 ## Analisi delle motivazioni (2)
 
-\Large{Motivazioni per il \alert{rilascio}:}
+Motivazioni per il \alert{rilascio}:
 
 *	Etica
 *	Accesso alle pubblicazioni
@@ -167,10 +138,12 @@ Possibili bias dovuti alla ricerca nella letteratura
 
 ## Analisi delle motivazioni (3)
 
-\Large{Motivazioni per l'\alert{integrazione}:}
+Motivazioni per l'\alert{integrazione}:
 
 *	Riduzione dei costi di sviluppo/manutenzione
-*	\alert{Contro-motivazione:} perdita della _paternità_ del contributo
+*	\alert{Contro-motivazioni:}
+	-	Perdita della _paternità_ del contributo
+	-	Minaccia al riconoscimento del credito accademico 
 
 
 ## Integrazione in BLAST
@@ -192,8 +165,6 @@ Possibili bias dovuti alla ricerca nella letteratura
 
 ## Possibili Spiegazioni
 
-\Large
-
 1.	**Universalità del contributo**
 	-	\doublequoted{\em{Non è conveniente integrare contributi troppo specifici}}
 	-	Non spiega la mancata integrazione di *WU-BLAST* e *GPU BLAST*
@@ -204,19 +175,24 @@ Possibili bias dovuti alla ricerca nella letteratura
 	-	\doublequoted{\em{L'integrazione (non)avviene su espressa volontà degli autori}}
 	-	Spiegazione che si adatta al pattern osservato
 
+
 ## Conflitto di Motivazioni
 
-\Large{La reputazione accademica come \alert{motivazione}:}
+La reputazione accademica come \alert{motivazione}:
 
 *	Crea le condizioni per lo sviluppo e il rilascio di miglioramenti
 *	**Non** per l'integrazione.
 *	Per motivare l'integrazione sono richieste delle condizioni \alert{difficili} da soddisfare in un ottica di \alert{\em{mutuo beneficio}}
 
+\citazione{the ideal\dots would be that NCBI
+[agrees to] write another paper and have them cite this from
+now on\dots that would be the ideal\dots}
+
 # Discussione
 
 ## Approccio alla discussione (1)
 
-\Large{\textbf{Due Domande:}}
+\textbf{Due Domande:}
 
 1. 	Perché la reputazione sembra essere problematica nella produzione di software scientifico mentre altre motivazioni no?
 
@@ -224,8 +200,6 @@ Possibili bias dovuti alla ricerca nella letteratura
 
 
 ## Approccio alla discussione (2)
-
-\Large
 
 *	Analisi delle motivazioni osservate per 
 	-	Sviluppo
@@ -238,78 +212,65 @@ La collaborazione sarà tanto \alert{efficace} quanto più \alert{equa} sarà la
 
 ## Fun & Learning
 
-\Large
-
 *	Immediatamente apprezzabile
 *	Indipendente dalle performance del sistema
 *	Indipendente dall'integrazione
-*	Particolarmente adatta al mondo Open
+*	Particolarmente adatta al mondo Open Source
 
 ## Use-Value
 
-\Large
-
 *	Fenomeno ben noto nel Mondo Open Source
 *	Presente anche nel Mondo Accademico e causa della produzione del c.d _incidental software_
-*	A volte **non** è un buon incentivo per il rilascio
+*	A volte non è un buon incentivo per il rilascio
 *	Non è complementare all'integrazione
 
 ## Denaro/profitti
 
-\Large
-
-*	Motivazione chiara
+*	Guadagno per _antonomasia_
 *	Facilita la divisione dei crediti
+	-	Vendita di beni complementari
+	-	Software commerciale
 
 ## Reputazione
 
-\Large
-
 *	Potenzialmente problematica se vista in ottica di divisione dei crediti
 *	Non si ottiene immediatamente nè indipendentemente
-*	Non facilmente controllabile (in quanto attribuita da altri)
+*	Non facilmente controllabile
 *	Suddivisione semplice se \alert{ogni} contributo individuale è \alert{chiaramente individuato} e riscontrabile nel prodotto finale
 
 ## Reputazione: \small{Open Source Vs Mondo Accademico}
 
-\Large{Meno problematica nel mondo Open Source rispetto al mondo accademico, per due ragioni:}
+Meno problematica nell'Open Source rispetto al mondo accademico per due ragioni:
 
-1. 	Utilizzo di sistemi in grado di offrire un dettaglio dei contributi e dei relativi autori (as es. Github)
+1. 	Uso di sistemi in grado di offrire un dettaglio dei contributi e dei relativi autori (as es. Github)
 2. 	Meccanismo di ritorno in termini di crediti/reputazione più diretto
 
 ## Misura della Reputazione
 
-\Large{Il particolare sistema di reputazione accademica ha due implicazioni sulla produzione di Software Scientifico:}
+Il sistema di reputazione accademica ha due implicazioni sulla produzione di Software Scientifico:
 
-1. 	I contributi devono essere di una *rilevanti* per essere *degni* di pubblicazione
-2. 	I contributi non hanno senso se non inclusi in pubblicazioni e/o citazioni i contributori figurano come autori
+1. 	I contributi devono essere *rilevanti* per essere *degni* di pubblicazione
+2. 	La visibilità dei contributi deve essere chiara a due livelli
+	-	Pubblicazione/citazione
+	-	Software
+
+
+\begin{alertblock}{Problema\dots}
+Le pubblicazioni scientifiche sono \em{oggetti statici}
+\end{alertblock}
 
 # Conclusioni
 
 ## Conclusioni
 
-<!-- \Large{L'integrazione dei contributi nel software scientifico:} 
-
--	Singoli contributi chiaramente individuabili a livello
-	+	*Software* 
-	+	*Pubblicazione Scientifica*
-
--	Particolarmente difficoltoso (natura statica degli articoli scientifici)
-	
-# Sviluppi futuri
-
-## Sviluppi futuri -->
-
-\Large
-
 Quattro approcci per una possibile soluzione:
 
 1. 	Finanziare la fase di integrazione
-	- 	in maniera _diretta_ 
-	- 	attraverso la creazione di \doublequoted{facilitatori} (come ad es. *Apache* e *Debian*)
-2. 	Cambio architetturale dei progetti di software scientifico
-3. 	Cambio dell'_economia_ della reputazione accademica 
-4. 	Meccanismo di _disaggregazione_ a livello di pubblicazione dei contributi integrati
+	- 	in maniera **diretta**
+	- 	attraverso la **creazione di \doublequoted{facilitatori}** (come ad es. *Apache* e *Debian*)
+2. 	**Cambio architetturale** dei progetti di software scientifico
+3. 	**Cambio dell'economia** della reputazione accademica 
+4. 	**Meccanismo di disaggregazione** a livello di pubblicazione dei contributi integrati
 	
 
 

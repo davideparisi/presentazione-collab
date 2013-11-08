@@ -1,7 +1,9 @@
 \documentclass[trans]{beamer}
 \usepackage{fontspec}
 \usepackage[italian]{babel}
+\usepackage[italian=nohyphenation]{hyphsubst}
 \usepackage{fancybox}
+
 
 \usetheme{Madrid}
 \useinnertheme{circles}
@@ -60,7 +62,7 @@
 % Custom block quotes
 \newcommand{\citazione}[1]{%
 	\begin{beamercolorbox}[sep=1em,rounded=true,center]{fg=unibaslate,bg=unibalight}
-		\em{“#1„}
+		\em{\Huge{“} \large{#1} \Huge{„}}
 	\end{beamercolorbox}
 }%
 % Custom Arrow
