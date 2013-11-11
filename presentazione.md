@@ -4,7 +4,7 @@
 
 *	Come è possibile \textbf{migliorare} ed \textbf{incentivare} la collaborazione nella produzione di software per 	la ricerca scientifica?
 
-*	È possibile guardare all' Open Source come modello?
+*	È possibile guardare all'Open Source come modello?
 
 ## Incentivi & Open Source
 
@@ -176,7 +176,7 @@ Motivazioni per l'\alert{integrazione}:
 	-	\doublequoted{\em{Il costo d'integrazione è minore in progetti modulari}}
 	-	Sono stati integrati *solo* contributi derivati da NCBI BLAST
 3.	**Intenzioni degli autori**
-	-	\doublequoted{\em{L'integrazione (non)avviene su espressa volontà degli autori}}
+	-	\doublequoted{\em{L'integrazione (non) avviene su espressa volontà degli autori}}
 	-	Spiegazione che si adatta al pattern osservato
 
 
@@ -185,7 +185,7 @@ Motivazioni per l'\alert{integrazione}:
 La reputazione accademica come \alert{motivazione}:
 
 *	Crea le condizioni per lo sviluppo e il rilascio di miglioramenti
-*	**Non** per l'integrazione.
+*	Non per l'integrazione.
 *	Per motivare l'integrazione sono richieste delle condizioni \alert{difficili} da soddisfare in un ottica di \alert{\em{mutuo beneficio}}
 
 \citazione{the ideal\dots would be that NCBI
@@ -223,8 +223,8 @@ La collaborazione sarà tanto \alert{efficace} quanto più \alert{equa} sarà la
 
 ## Use-Value
 
-*	Fenomeno ben noto nel Mondo Open Source
-*	Presente anche nel Mondo Accademico e causa della produzione del c.d _incidental software_
+*	Fenomeno ben noto nel mondo Open Source
+*	Presente anche nel mondo accademico e causa della produzione del c.d. _incidental software_
 *	A volte non è un buon incentivo per il rilascio
 *	Non è complementare all'integrazione
 
